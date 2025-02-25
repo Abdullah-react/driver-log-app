@@ -6,7 +6,7 @@ import './styles/journey.css';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './hooks/useAuth';
 import AppRouter from './router/AppRouter';
-
+import './styles/main.scss';
 function App() {
   return (
     <AuthProvider>

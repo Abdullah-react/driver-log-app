@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.journey-dashboard {
+  margin-bottom: $spacing-unit * 3;
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: $spacing-unit * 2;
+
+    @include respond-to(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to(lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .stat-card {
+    @include card;
+    text-align: center;
+    padding: $spacing-unit * 2;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-unit;
+      color: $primary-color;
+    }
+
+    p {
+      color: $secondary-color;
+      margin: 0;
+    }
+  }
+}

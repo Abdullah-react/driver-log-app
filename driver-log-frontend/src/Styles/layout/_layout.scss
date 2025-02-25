@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.app-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
+  padding: $container-padding;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include respond-to(md) {
+    padding: $container-padding * 2;
+  }
+}
+
+.sidebar {
+  display: none;
+  width: 250px;
+  background: white;
+  border-right: 1px solid $border-color;
+  padding: $spacing-unit * 2;
+
+  @include respond-to(lg) {
+    display: block;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}

@@ -1,0 +1,35 @@
+// Colors
+$primary-color: #1a73e8;
+$secondary-color: #5f6368;
+$success-color: #34a853;
+$warning-color: #fbbc05;
+$danger-color: #ea4335;
+$light-color: #f8f9fa;
+$dark-color: #202124;
+
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Spacing
+$spacing-unit: 8px;
+$container-padding: $spacing-unit * 2;
+
+// Typography
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Border
+$border-radius: 4px;
+$border-color: #e0e0e0;
+
+// Shadows
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.1);

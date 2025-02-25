@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.journey-map {
+  height: 400px;
+  margin-bottom: $spacing-unit * 3;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  @include respond-to(md) {
+    height: 600px;
+  }
+
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .map-controls {
+    position: absolute;
+    top: $spacing-unit * 2;
+    right: $spacing-unit * 2;
+    z-index: 1000;
+    background: white;
+    padding: $spacing-unit;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  }
+}
