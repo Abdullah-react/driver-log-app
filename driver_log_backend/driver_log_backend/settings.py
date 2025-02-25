@@ -41,11 +41,11 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "corsheaders",
     "rest_framework_simplejwt.token_blacklist",
-    "channels"
+    "channels",
     "core",
     "authentication",
 ]
-
+ASGI_APPLICATION = 'driver_log_backend.asgi.application'
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",

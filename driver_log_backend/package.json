@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@react-spring/web": "^9.7.5",
-    "date-fns": "^4.1.0",
-    "react-router-dom": "^7.2.0"
-  }
-}
